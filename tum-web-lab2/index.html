@@ -3,30 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cookie factory</title>
+    <title>Cookie Factory</title>
     <!-- CHANGE THESE VALUES -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-	<header>
-      		<h1>Welcome to the Cookie Factory!</h1>
+    <header>
+      <h1>Welcome to the Cookie Factory!</h1>
+      <nav>
+        <ul>
+          <li><a href="#about" id="about-button">About Us</a></li>
+          <li><a href="#products">Our Products</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to the Cookie Factory! We are a family-owned business that has been baking delicious cookies for over 20 years. Our secret recipes and high-quality ingredients ensure that every bite is a taste of heaven.</p>
+      </section>
+      
+      
+      
+    </main>
+    <footer>
+      <p>&copy; 2024 Cookie Factory. All rights reserved.</p>
+    </footer>
+    <script>
+      // Get the "About Us" button and the "About Us" section
+      const aboutButton = document.getElementById('about-button');
+      const aboutSection = document.getElementById('about-section');
 
-		<nav>
-        		<ul>
-          			<li><a href="#about">About Us</a></li>
-          			<li><a href="#products">Our Products</a></li>
-          			<li><a href="#contact">Contact Us</a></li>
-        		</ul>
-      		</nav>
-    	</header>
-	
-	<main>
-		<section id="#about">
-			<h2>About Us</h2>
-			<p>Welcome to the Cookie Factory! This is a business that has been baking delicious cookies for over 20 years. Our secret recipes and high-quality ingredients ensure that every bite is a taste of heaven. We offer a variety of tasty cookies and give you as an option to order some custom cookies for special ocasions.</p>
-		</section>
-	</main>
-    
+      // Hide the "About Us" section by default
+      aboutSection.style.display = 'none';
+
+      // Add a click event listener to the "About Us" button
+      aboutButton.addEventListener('click', function() {
+        // Toggle the visibility of the "About Us" section
+        if (aboutSection.style.display === 'none') {
+          aboutSection.style.display = 'block';
+        } else {
+          aboutSection.style.display = 'none';
+        }
+      });
+    </script>
   </body>
 </html>
