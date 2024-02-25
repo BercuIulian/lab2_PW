@@ -3,12 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
+    <title>Cookie Factory</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- ADD YOUR CODE HERE -->
+    <header>
+      <h1>Welcome to the Cookie Factory!</h1>
+      <nav>
+        <ul>
+          <li><a href="#about" id="about-button">About Us</a></li>
+          <li><a href="#products" id="products-button">Our Products</a></li>
+          <li><a href="#contact" id="contact-button">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to the Cookie Factory! We are a family-owned business that has been baking delicious cookies for over 20 years. Our secret recipes and high-quality ingredients ensure that every bite is a taste of heaven.</p>
+      </section>
+      <section id="products-section">
+        <h2>Our Products</h2>
+        <p>Check out our delicious cookie flavors:</p>
+        <ul>
+          <li>Chocolate Chip</li>
+          <li>Oatmeal Raisin</li>
+          <li>Sugar</li>
+          <li>Snickerdoodle</li>
+        </ul>
+      </section>
+      <section id="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have a question or feedback? Contact us at:</p>
+        <p>Email: info@cookiefactory.com</p>
+        <p>Phone: 069-123-123</p>
+      </section>
+
+    </main>
+    <footer>
+      <p>&copy; 2024 Cookie Factory. All rights reserved.</p>
+    </footer>
+    <script>
+	const aboutButton = document.getElementById('about-button');
+      	const aboutSection = document.getElementById('about-section');
+
+	aboutSection.style.display = 'none';
+
+	aboutButton.addEventListener('click', function() {
+  	      if (aboutSection.style.display === 'none') {
+     	     aboutSection.style.display = 'block';
+       		 } else {
+         	 aboutSection.style.display = 'none';
+        }
+      });
+
+	const productsButton = document.getElementById('products-button');
+      	const productsSection = document.getElementById('products-section');
+
+	productsSection.style.display = 'none';
+
+	productsButton.addEventListener('click', function() {
+  	      if (productsSection.style.display === 'none') {
+     	     productsSection.style.display = 'block';
+       		 } else {
+         	 productsSection.style.display = 'none';
+        }
+      });
+
+	const contactButton = document.getElementById('contact-button');
+      	const contactSection = document.getElementById('contact-section');
+
+	contactSection.style.display = 'none';
+
+	contactButton.addEventListener('click', function() {
+  	      if (contactSection.style.display === 'none') {
+     	     contactSection.style.display = 'block';
+       		 } else {
+         	 contactSection.style.display = 'none';
+        }
+      });
+    </script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
