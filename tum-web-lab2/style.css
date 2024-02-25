@@ -90,3 +90,19 @@ footer {
   color: #ff6600;
 }
 
+#feedback-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.feedback-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.feedback-item p {
+  margin: 0;
+}
+
