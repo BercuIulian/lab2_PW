@@ -81,3 +81,12 @@ footer {
 .hero-content button:hover {
   background-color: #ff8533;
 }
+
+#products-section ul li {
+  font-weight: bold;
+}
+
+#products-section ul li span {
+  color: #ff6600;
+}
+
